@@ -28,15 +28,17 @@
 
 .filters .locations,
 .filters .amenities {
-	width: 25%;
+	width: 100%;
+	max-width: calc(45% - 1rem);
 	height: 100%;
 	color: #aaa;
 	position: absolute;
 	cursor: pointer;
+	text-align: center;
 }
 
 .filters .locations {
-	left: 5%;
+	left: -5%;
 }
 
 /* Border after the first element */
@@ -99,18 +101,11 @@
 	transition-property: transform;
 }
 
+.filters .locations:hover .popover,
 .filters .amenities:hover .popover {
 	z-index: 10;
 	opacity: 1;
 	visibility: visible;
-	transform: translate(105%, 0);
-	transition: all 0.5s cubic-bezier(0.02, -0.02, 0.2, 0.65);
-}
-
-.filters .locations:hover .popover {
-	z-index: 10;
-	opacity: 1;
-	visibility: visible;
-	transform: translate(115%, 0);
-	transition: all 0.5s cubic-bezier(0.02, -0.02, 0.2, 0.65);
+	transform: translate(90%, -5%);
+	transition: all 0.5s cubic-bezier(0.02, -0.3, 0.2, 0.65);
 }
