@@ -4,10 +4,16 @@
 	font-weight: normal;
 }
 
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+	font-size: 10px;
+}
+
 body {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
 	color: #484848;
 	font-size: 14px;
 	font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
