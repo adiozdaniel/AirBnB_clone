@@ -1,15 +1,22 @@
-@font-face {
+/* @font-face {
 	font-family: circular;
-	src: url("fonts/CircularStd-Black.woff"), url("fonts/CircularStd-Bold.woff");
+	src: url("fonts/CircularStd-Black.woff");
 	font-weight: normal;
+} */
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #b6b2b2;
+  }
 }
 
 *,
+html,
 *::after,
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+  box-sizing: border-box;
 	font-size: 10px;
 }
 
@@ -17,6 +24,9 @@ body {
 	color: #484848;
 	font-size: 14px;
 	font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	min-height: 100vh;
+	display: flex;
+	flex-flow: column nowrap;
 }
 
 .container {
@@ -24,5 +34,4 @@ body {
 	width: 100%;
 	margin: 30px auto;
 	position: relative;
-	box-shadow: 0 0.09rem 0.04rem 0 rgba(0, 0, 0, 0.26);
 }

@@ -1,15 +1,13 @@
 footer {
-	background-color: #fff;
 	height: 60px;
 	width: 100%;
+	margin-top: auto;
 	border-top: #ccc solid 1px;
 	text-align:center;
-	position: fixed;
-	bottom: 0;
-	box-shadow: 0 1rem 1rem 1rem rgba(0, 0, 0, 0.26);
+	box-shadow: 0.5rem 0 0.5rem 0 rgba(0, 0, 0, 0.26);
 }
 
 footer p {
-	padding-top: 2.5rem;
-		font-size: 1.4rem;
+	font-size: 1.4rem;
+	padding-top: 1.4rem;
 }

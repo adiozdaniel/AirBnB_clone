@@ -1,4 +1,5 @@
 .filters {
+	z-index: 100;
 	color: #fff;
 	height: 7rem;
 	border: #ddd solid 1px;
@@ -28,10 +29,10 @@
 .filters .locations,
 .filters .amenities {
 	width: 25%;
-	height: 100%;
 	color: #aaa;
 	position: relative;
-	margin-top: 1.3rem;
+	margin-top: .8rem;
+	z-index: inherit;
 }
 
 .filters .amenities {
@@ -41,10 +42,10 @@
 /* Border after the first element */
 .filters .locations::after {
 	content: "";
-	height: 80%;
+	height: 90%;
 	position: absolute;
 	border-right: #ddd solid 1px;
-	top: -.5rem;
+	top: -.2rem;
 	left: 108%;
 }
 
@@ -68,7 +69,6 @@
 	list-style: none;
 	border-radius: 4px;
 	background-color: #fafafa;
-	padding-top: 0.8rem;
 	box-shadow: 0 .025rem .6rem .2rem rgba(0, 0, 0, 0.26);
 	width: 100%;
 	height:max-content;
@@ -77,13 +77,13 @@
 .locations > ul:before,
 .amenities > ul:before {
 	position: absolute;
-	z-index: -1;
+	z-index: inherit;
 	content: "";
 	right: calc(50% - 1rem);
-	top: -1rem;
+	top: -1.2rem;
 	border: #ddd solid 1px;
 	border-width: 0 0.5rem 0.5rem 0.5rem;
-	border-color: transparent transparent #bfbfbf transparent;
+	border-color: transparent transparent #ddd transparent;
 	transition-duration: 0.3s;
 	transition-property: transform;
 }
@@ -93,12 +93,13 @@
 	visibility: visible;
 	cursor: pointer;
 	letter-spacing: 0.3rem;
-	transform: translate(0%, 30%);
+	transform: translate(0%, 27%);
 	transition: all 0.5s cubic-bezier(0.02, -0.3, 0.2, 0.65);
 }
 
 div ul li {
 	margin: 0.5rem;
+	font-size: 1.4rem;
 }
 
 div ul li h2 {
