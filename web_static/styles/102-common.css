@@ -30,8 +30,57 @@ body {
 }
 
 .container {
-	max-width: 1000px;
+	max-width: 100rem;
 	width: 100%;
 	margin: 30px auto;
 	position: relative;
 }
+
+@media (max-width: 810px) {
+	.container {
+		max-width: 76rem;
+	}
+}
+
+@media (max-width: 768px) {
+	.container {
+		max-width: 70rem;
+	}
+}
+
+@media (max-width: 502px) {
+	.container {
+		max-width: 45rem;
+	}
+}
+
+@media (max-width: 428px) {
+	.container {
+		max-width: 38rem;
+	}
+}
+
+@media (max-width: 414px) {
+	.container {
+		max-width: 36rem;
+	}
+}
+
+@media (max-width: 384px) {
+	.container {
+		max-width: 34rem;
+	}
+}
+
+@media (max-width: 360px) {
+	.container {
+		max-width: 30rem;
+	}
+}
+
+/* @media (max-width: 502px), screen and (orientation: portrait) {
+	.container {
+		max-width: 48rem;
+	}
+}
+*/
