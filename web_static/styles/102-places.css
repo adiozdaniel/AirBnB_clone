@@ -27,11 +27,10 @@
 .places article h2 {
   font-size: 2rem;
   position: absolute;
-  left: 12rem;
+  left: 5rem;
   padding-top: 1rem;
   padding-left: -3rem;
   text-transform: capitalize;
-  text-align: center;
 }
 
 .places .price_by_night {
@@ -115,7 +114,7 @@
 
 .places .amenities ul > li {
   height: 5rem;
-  padding: 2rem 6rem;
+  padding: 2rem 0;
   background:  url("../images/icon_pets.png") no-repeat left top;
 }
 
